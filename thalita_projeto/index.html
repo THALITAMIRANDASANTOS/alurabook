@@ -57,6 +57,10 @@
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="img//ApacheKafka.svg" alt="livro sobre apache kafka e spring boot da alura books"></div>
                 <div class="swiper-slide"><img src="img/Liderança.svg" alt="livro sobre liderança em design da alura books"></div>
@@ -65,19 +69,24 @@
                 <div class="swiper-slide"><img src="img/Portugol.svg" alt="livro sobre Portugol"></div>
                 <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre Acessibilidade"></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
   
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-  
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
 
     <script src="https://unpkg.com/swiper28/swiper-bundle.min.js"></script>
+    </script>
+    const swiper = new swiper('.swiper', {
+        spaceBetween: 10,
+        SlidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination,'
+            type:'bulleets',
+        }
+    });
+    </script>
 </body>
 
 </html>
